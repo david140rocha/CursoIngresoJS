@@ -10,6 +10,7 @@ function mostrar()
                                                         //Value es el nombre que sacamos desde el Chrome con el boton "Inspeccionar"
                                                         //"elNombre" lo sacamos
     alert(nombre);
+
 }
 
 
