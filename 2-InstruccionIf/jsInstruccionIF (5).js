@@ -1,6 +1,17 @@
 function mostrar()
 {
 //tomo la edad  
+var edad;
+edad = parseInt(document.getElementById("edad").value);
 
+if (edad < 13 || edad > 17)
+{
+
+    alert ("usted no es un adolecente");
+}
+else     // el punto no pedia poner (else), lo puse porque quize y porque puedo y queria probarlo//
+ {
+     alert("Usted es un adolecente")
+ }
 
 }//FIN DE LA FUNCIÓN
