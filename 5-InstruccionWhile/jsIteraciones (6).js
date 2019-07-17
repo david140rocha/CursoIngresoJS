@@ -7,14 +7,17 @@ function mostrar()
 	var promedio;
 	white(contador <5)
 	{
-		numero =parseInt(prompt("ingrese el promedio"));
-		suma =
+		numero = parseInt(prompt("ingrese el promedio"));
+		suma += numero;
+		contador +1 ; 
+
 		
 	}
+	promedio = suma / 5;
 
 
 
-document.getElementById('suma').value=acumulador;
-document.getElementById('promedio').value=acumulador/5;
+document.getElementById('suma').value=suma;
+document.getElementById('promedio').value=promedio/5;
 
 }//FIN DE LA FUNCIÓN
