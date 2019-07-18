@@ -17,6 +17,11 @@ switch (mes) {
     alert ("Ya pasamos el frio, ahora calor!!!.");
     break;
 
+    default : // } funciona igual
+    alert ("Falta para el invierno.");
+    break;
+ // }
+
     
 }
 

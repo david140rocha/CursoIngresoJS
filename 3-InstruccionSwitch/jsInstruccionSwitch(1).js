@@ -16,6 +16,9 @@ switch (mes){
     case "Diciembre":
     alert ("Felices fiesta!!!");
     break;
+    default: 
+    alert ("Esta en el mes de : " + mes);
+    break;
 }
 
 
