@@ -1,20 +1,31 @@
 function mostrar()
 {
-	var positivo=0;
-	var negativo=1;
-	var numeroNegativo = 0 ;
-	var numero ;//numero que s eva ingresar en la caja de texto 
-	var respuesta='si';
+	var positivo =0;
+	var negativo =1;
+	var numero ;          
+	var contadorNeg = 0;        //numero que se va ingresar en la caja de texto 
+	var respuesta ='s';
 	
-	while(respuesta == "s") { // numero que se le va a pedir al usuario que ingresa un numero/
-	 if (respuesta < 0);{
-	 numero = parseInt(prompt("ingrese el promedio")); ///numero que se escribe en la caja de texto//
-	 positivo = positivo * numero ;
-	 numero = ;
-	 numero = parseInt(prompt("ingrese el promedio"));
-	} 
-}
-document.getElementById('suma').value=positivo;
-document.getElementById('producto').value=negativo;
+	while (respuesta == "s") {     
+		numero = parseInt(prompt("ingrese un numero"));
+		 while (isNaN(numero)) { 
+		 alert("el dato que ingresaste no es numero ")
+		 numero = parseInt(prompt("ingrese un numero"));
+		 }
+	 if (numero < 0)  {
+	 negativo = negativo * numero ;
+	 contadorNeg = contadorNeg + 1 ;
+	 
+	 } 
+	 if (numero > 0 )  {
+	 positivo = positivo + numero ; 
+	  }
+	 respuesta = prompt("¿quiere continuar sumando?");	
+	}
 
-}//FIN DE LA FUNCIÓN
+    document.getElementById('suma').value=positivo;
+	document.getElementById('producto').value=negativo;
+	//document.getElementById('producto').value = contadorNeg;
+
+}//FIN DE LA FUNCIÓN        
+//

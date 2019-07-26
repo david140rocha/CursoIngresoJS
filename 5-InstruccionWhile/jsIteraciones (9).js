@@ -17,7 +17,7 @@ function mostrar()
 		 }
 	    seguir = prompt("quiere ingresar otro numero?");
 		
-	  } while( == 's'); // es igual a decir que si la "respuesta" es distinta a "no" se va ejecutar lo que este en corchets dentro del if/
+	  } while(seguir == 's'); // es igual a decir que si la "respuesta" es distinta a "no" se va ejecutar lo que este en corchets dentro del if/
 
 	document.getElementById("maximo").value = maximo;
 	document.getElementById("minimo").value = minimo;
