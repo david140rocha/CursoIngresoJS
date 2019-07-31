@@ -9,13 +9,16 @@ function mostrar()
      alert ("si tiene 28 dias");
      break;
 
-     default: 
-     alert ("si tiene 31 dias.")
- }
-  
-    //default:
-     // alert ("si tiene 31 dias");
-      //break; 
+     case 'Abril':
+     case 'Junio':
+     case 'Septiembre':
+     case 'Noviembre':
+     alert ("si tiene 30 dias.")
+     break;
+
+    default:
+     alert ("si tiene 31 dias");
+      break; }
   
 }//FIN DE LA FUNCIÓN
 //Enero">Enero</option>
