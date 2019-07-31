@@ -14,10 +14,10 @@ function mostrar()
 		 }
 	 if (numero < 0)  {
 	 negativo = negativo * numero ;
-	 contadorNeg = contadorNeg + 1 ;
+	 contadorNeg = contadorNeg + 1 ;      // averiguar como usar el contador de negativos para que aparesca 9 cuando no se escriban numeros negativos.
 	 
 	 } 
-	 if (numero > 0 )  {
+	 else  {                           // if (numero > 0 )  {    //tambien puede funcionar de esta manera .
 	 positivo = positivo + numero ; 
 	  }
 	 respuesta = prompt("¿quiere continuar sumando?");	

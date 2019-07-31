@@ -4,16 +4,20 @@ function mostrar()
 	var numero;
 	var minimo;
 	var maximo;// declarar variables
-	var seguir;
-	//var flag = 0;
+	var seguir = "s";
+	var flag = 0;
 	 do{
-		numero = parseInt(prompt("Ingrese un numero"));
-		 if (numero > maximo ){//|| flag == 0){
+		numero = parseInt(prompt("ingrese un numero"));
+		while (isNaN(numero)) { 
+		alert("el dato que ingresaste no es numero ");
+		numero = parseInt(prompt("ingrese un numero"));
+		}
+		 if (numero > maximo || flag == 0){
 			maximo = numero; 
 		 } 
-		 if(numero < minimo ){//|| falg == 0){
+		 if (numero < minimo || flag == 0){
 			minimo = numero;
-			//flag =1
+			flag = 1 ;
 		 }
 	    seguir = prompt("quiere ingresar otro numero?");
 		
