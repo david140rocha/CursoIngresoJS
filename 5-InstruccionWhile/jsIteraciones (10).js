@@ -39,14 +39,22 @@ function mostrar()
 	promNeg = negativos / cantNeg ;
 	diferencia = positivos + negativos ;
 
-	console.log
-	(" 1-La suma de positivos es: " + positivos,
-	"\ 2-La suma de negativos es: " + negativos,
-	"\ 3-Cantidad de positivos es: " + cantPos,
-	"\ 4-Cantidad de negativos es: " + cantNeg,
-	"\ 5-Cantidad de ceros es: " + cantCeros,
-	"\ 6-Cantidad de numeros pares es: " + numPares,
-	"\ 7-El promedio de los positivos es: " + promPos,
-	"\ 8-El promedio de Negativos es: " + promNeg,
-	"\ 9-Diferencia entre Positivos y Negativos es: " + diferencia);
+	
+	document.write(" 1-La suma de positivos es: " + positivos+ "<br>");
+
+	document.write( "2-La suma de negativos es: " + negativos + "<br>");
+
+	document.write ("3-Cantidad de positivos es: " + cantPos + "<br>");
+
+	document.write("4-Cantidad de negativos es: " + cantNeg + "<br>");
+
+	document.write("5-Cantidad de ceros es: " + cantCeros + "<br>");
+
+	document.write("6-Cantidad de numeros pares es: " + numPares + "<br>");
+
+	document.write("7-El promedio de los positivos es: " + promPos + "<br>");
+
+	document.write("8-El promedio de Negativos es: " + promNeg +"<br>");
+
+	document.write("9-Diferencia entre Positivos y Negativos es: " + diferencia + "<br>");
 }//FIN DE LA FUNCIÓN
