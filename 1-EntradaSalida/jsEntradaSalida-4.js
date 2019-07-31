@@ -8,6 +8,7 @@ function mostrar()
 
 	nombre = prompt(document.getElementById("elNombre").value);
 
-    alert ("su nombre es "+ nombre);
+	document.getElementById("elNombre").value = nombre;
+    //alert ("su nombre es "+ nombre); ESTO ESTABA MAL PERO ....BUENO LO DEJO PARA recordar 
 }
 

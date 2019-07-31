@@ -11,7 +11,7 @@ function mostrarAumento()
 
  porcentaje = 10 * sueldo / 100 ;
 
- alert ("porcentaje " + porcentaje )
+ alert ("EL porcentaje de 10% de su sueldo es: " + porcentaje )
   
  sueldo = sueldo + porcentaje ;
 

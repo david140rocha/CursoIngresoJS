@@ -18,7 +18,7 @@ function sumar()
 
     resultado = num1 + num2 ;
 
-alert("la sumas es " + resultado);  
+alert("la sumas es: " + resultado);  
 
 
 	
@@ -40,7 +40,7 @@ function restar()
 
     resultado = num1 - num2;
 
-alert("la sumas es " + resultado);  
+alert("la resta es: " + resultado);  
 
 	
 }
@@ -61,7 +61,7 @@ function multiplicar()
 
     resultado = num1 * num2;
 
-alert("la sumas es " + resultado);  
+alert("la multiplicacion es: " + resultado);  
 
 	
 }
@@ -82,7 +82,7 @@ function dividir()
 
     resultado = num1 / num2;
 
-alert("la sumas es " + resultado);
+alert("la division es: " + resultado);
 
 }
 
