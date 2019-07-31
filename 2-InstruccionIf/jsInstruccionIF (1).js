@@ -8,6 +8,9 @@ function mostrar()
 {
     alert("niña bonita");
 }  
+if (edad != 15) {          /// se usa      else (.....)   {....alert (".....")...}
+    alert ("usted no es niña vonita");
+}
 
 
 

@@ -9,7 +9,7 @@ edad = parseInt(document.getElementById("edad").value);
 estado = document.getElementById("estadoCivil").value;
 
 if
-(edad < 18 && estado |= "Soltero")
+(edad < 18 && estado != "Soltero")
 
 {
 

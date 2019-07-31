@@ -10,10 +10,10 @@ if (edad >= 18){
 
 }
 else if  
-    (edad >= 13 && edad <= 17) 
+    (edad >= 13 && edad <= 17) { 
 
     alert ("Usted es un adolecente");
-
+    }
 else
 {
  alert("Usted es menor edad");

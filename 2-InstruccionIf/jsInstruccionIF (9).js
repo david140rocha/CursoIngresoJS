@@ -6,7 +6,7 @@ function mostrar()
 
 	 alert (numeroRandom);
 
-	// el comando de random no lo vamos a usar pero es mejor aprenderlo que perder un conocimiento//
+	// el comando de random no lo vamos a usar pero es un conocimiento mas //
 	// random: sirve para sacar un un numero random (aleatorio) en un rango determinado.
 
 }//FIN DE LA FUNCIÓN
