@@ -8,8 +8,8 @@ function mostrar()
 	var cantNeg = 0;
 	var cantCeros = 0;
 	var numPares = 0;
-	var promPos ;
-	var promNeg;
+	var promPos = 0;
+	var promNeg = 0;
 	var diferencia;	
 	
 	do{
@@ -26,18 +26,22 @@ function mostrar()
 			negativos = negativos + numero ;
 			cantNeg = cantNeg + 1 ;
 		 }
-		 else if (numero == 0)  {
+		 else {                              //else if (numero == 0)  {    }
 			 cantCeros = cantCeros + 1 ;
 		 }
-		 else if ( numero % 2 == 0)  {
+		 if ( numero % 2 == 0)  {
 			 numPares = numPares + 1;
 		 }
 	 respuesta = prompt("quiere ingresar otro numero?");
 	}while (respuesta == 's');
-	
+
+	if(cantPos != 0) { 
 	promPos = positivos / cantPos ;
+	}
+	if(cantNeg != 0) { 
 	promNeg = negativos / cantNeg ;
-	diferencia = positivos + negativos ;
+	}
+	diferencia = positivos - negativos ;
 
 	
 	document.write(" 1-La suma de positivos es: " + positivos+ "<br>");

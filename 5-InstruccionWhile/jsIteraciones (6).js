@@ -6,7 +6,7 @@ function mostrar()
 	var promedio; ///no le asignamos un valor para despues darselo en el repetidor
 	
 	while(contador <5) { // condicion ó valor asignado que se va a dar para que el repetidor se ejecute/
-	numero = parseInt(prompt("ingrese el promedio")); ///numero que se escribe en la caja de texto//
+	numero = parseInt(prompt("ingrese un numero")); ///numero que se escribe en la caja de texto//
 	suma = suma + numero;  //se puede resumir en...   suma += numero;   //se suma el "acumulador" que se llama "suma" en este caso" con el numero que se ingresa en el prompt
     contador = contador + 1; 		//tambien se lo puede resumir en.... //   contador++;   // el contador suma ó cuenta las veces que el repetidor es ejecutado
 	}                              // el contador es muy usado para sumar y repetirse
