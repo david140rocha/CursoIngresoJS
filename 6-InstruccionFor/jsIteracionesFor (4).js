@@ -1,5 +1,8 @@
 function mostrar()
 {
+    for{  ;  ;contador++}{
+        if( )
+    }
 
 
 

@@ -10,11 +10,11 @@ if(numero1 == numero2) {
 }
 if(numero1 > numero2) {
     resta = numero1 - numero2;
-    alert("La suma de los numeros es: "+ resta);
+    alert("La resta de los numeros es: "+ resta);
 }
 if (numero1 < numero2 ) {
     suma = numero1 + numero2;
-    alert ("La resta de los numeros es: "+ suma);
+    alert ("La suma de los numeros es: "+ suma);
 }
 if (suma > 10 ) { 
     alert ("la suma es "+ suma + " y supero el 10");
