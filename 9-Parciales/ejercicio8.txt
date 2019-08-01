@@ -1,0 +1,80 @@
+function mostrar() {
+
+
+    var seguir;
+    var letra;
+    var numero;
+    var contPares = 0;
+    var contImpares = 0;
+    var contCeros = 0;
+    var contPos = 0;
+    var acumPos = 0;
+    var acumNeg = 0;
+    var maximo;
+    var minimo;
+    var letraMax;
+    var letraMin;
+    var flag = 0;
+    var promedioPos = 0;
+
+
+    do {
+        letra = prompt("Ingrese una letra: ");
+
+        numero = parseInt(prompt("Ingrese un numero entre -100 y 100: "));
+
+        // while( !(numero >= -100 && numero <= 100)){
+        while (numero < -100 || numero > 100 || isNaN(numero)) {
+
+            numero = parseInt(prompt("Error.Ingrese un numero entre -100 y 100: "));
+        }
+
+        if (numero % 2 == 0) {
+            contPares++;
+        }
+        else {
+            contImpares++;
+        }
+
+        if (numero > 0) {
+            //positivos
+            acumPos = acumPos + numero;
+            contPos++;
+        }
+        else if (numero < 0) {
+            // negativos
+            acumNeg = acumNeg + numero;
+        }
+        else {
+            //cero
+            contCeros++;
+        }
+
+        if (numero < minimo || flag == 0) {
+            minimo = numero;
+            letraMin = letra;
+        }
+
+        if (numero > maximo || flag == 0) {
+            maximo = numero;
+            letraMax = letra;
+            flag = 1;
+        }
+
+        seguir = prompt("Quiere continuar?");
+    } while (seguir == 's');
+
+    if (contPos != 0) {
+        promedioPos = acumPos / contPos;
+    }
+
+    document.write("Cantidad pares: " + contPares + "<br>");
+    document.write("Cantidad impares: " + contImpares + "<br>");
+    document.write("Cantidad ceros: " + contCeros + "<br>");
+    document.write("Promedio Positivos: " + promedioPos + "<br>");
+    document.write("Suma de negativos: " + acumNeg + "<br>");
+    document.write("Maximo: " + maximo + "Letra: " + letraMax + "<br>");
+    document.write("Minimo: " + minimo + "Letra: " + letraMin + "<br>");
+
+
+}

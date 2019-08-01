@@ -1,31 +1,44 @@
 function mostrar()
 {
-var nota;
+ var nota;
  var sexo;
- var promedio = 0;
+ var promedio ;
  var acumulador = 0;
  var contador = 0 ;
- var minimo = 0 ;
+ var contm6 = 0;
+ var Sbajo;
+ var Nbaja = 0;
+ var flag = 0;
 
- while(contador < 5){
+ for(R = 0 ;R < 5; R++){
+
      nota = parseInt(prompt("ingrese una nota"));
-     while(isNaN(nota)){
+
+     while(isNaN(nota)|| nota < 0 || nota > 10 ){
          alert("no has ingresado un numero");
          nota = parseInt(prompt("ingrese una nota"));
      }
-     while (nota <= 0 || nota >= 10 ){
-        alert("ingrese un numero entre 0 y 10");
-        nota = parseInt(prompt("ingrese una nota"));
+     sexo = prompt("ingrese un sexo"); 
+     while( sexo != 'm' && sexo != "f"){
+         alert('sexo no existente');
+         sexo = prompt("ingrese un sexo");
      }
-    sexo = prompt("ingrese un sexo");
-    if(sexo == m && sexo == m ){ 
+     if(sexo == 'm' && sexo >= 6 ){
+         while(sexo >= 6 ){ 
+         contm6++;
     }
-    if(nota)
-    acumulador= acumulador + nota ;
-    contador = contador +1;
+     }
+    acumulador = acumulador + nota ;
+    contador ++;
 
- }
- promedio = acumulador / 5;
-    
- alert (promedio);
+     if(nota < Nbaja || flag == 0 ) {
+        Nbaja = nota;
+        Sbajo = sexo;
+        flag = 1;
+      }
+    }
+
+ promedio = acumulador / contador;
+//para sacar  el alert y que las lineas que se escriban una abajo de la otra se debe usar '/b....' en la oracion .
+ alert("El promedio de las notas es: " + promedio +" la nota mas baja es: " + Nbaja + " y su sexo es: " + Sbajo + ' ncantidad de varones >=6: ' + contm6);   
 }
