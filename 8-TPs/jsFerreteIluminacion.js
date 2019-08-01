@@ -13,34 +13,46 @@ function CalcularPrecio ()
  var cantlamparas = parseInt(document.getElementById('Cantidad').value);
  var marca = document.getElementById('Marca').value;
  var descuento ;
- var preciolampara ;
+ var precio = 35;
+ var preciocondescuento;
+ var preciofinal;
+ var iibb;
+ var precioFcondescuento;
 
  switch (cantlamparas){
      case '1':
      case '2':
+     descuento = 0;
+     break;
+
      case '3':
          break;
      case '4':
          break;
      case '5':
             if (marca == 'ArgentinaLuz'){
-                preciolampara = cantlamparas * 35 ;
-                descuento = preciolampara * 40 / 100;
+                descuento = 40;
             }
             else { 
-                preciolampara = cantlamparas * 35 ;
-                desceunto = preciolampara * 30 / 100 ;
+                desceunto = 30;
             }
             break;
 
          default:
              {
-                preciolampara = cantlamparas * 35 ;
-               descuento = preciolampara * 50 / 100;
+               descuento = 50;
+             }
+             preciocondescuento = precio * descuento / 100 ;
+             preciofinal = preciocondescuento * cantlamparas ; 
+
+             if (preciofinal > 120 ){
+                 iibb = precio * 10;
+                 precioFcondescuento = preciofinal + iibb;
              }
      
 
  }
- document.getElementById("precioDescuento").value = preciolampara + descuento;
+ alert (" el precio mas los ingresos brutos es: " + precioFcondescuento);
+ document.getElementById("precioDescuento").value = preciofinal;
  	
 }
