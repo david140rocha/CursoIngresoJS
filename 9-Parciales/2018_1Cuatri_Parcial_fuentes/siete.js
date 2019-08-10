@@ -6,7 +6,7 @@ function mostrar()
  var acumulador = 0;
  var contador = 0 ;
  var contm6 = 0;
- var Sbajo;
+ var Sbajo ;
  var Nbaja = 0;
  var flag = 0;
 
@@ -23,10 +23,9 @@ function mostrar()
          alert('sexo no existente');
          sexo = prompt("ingrese un sexo");
      }
-     if(sexo == 'm' && sexo >= 6 ){
-         while(sexo >= 6 ){ 
+     if(sexo == 'm' && nota >= 6 ){
          contm6++;
-    }
+
      }
     acumulador = acumulador + nota ;
     contador ++;
@@ -39,6 +38,6 @@ function mostrar()
     }
 
  promedio = acumulador / contador;
-//para sacar  el alert y que las lineas que se escriban una abajo de la otra se debe usar '/b....' en la oracion .
- alert("El promedio de las notas es: " + promedio +" la nota mas baja es: " + Nbaja + " y su sexo es: " + Sbajo + ' ncantidad de varones >=6: ' + contm6);   
+//para sacar  el alert y que las lineas que se escriban una abajo de la otra se debe usar '/n....' en la oracion .
+ alert("El promedio de las notas es: " + promedio +"\nla nota mas baja es: " + Nbaja + " y su sexo es: " + Sbajo + '\ncantidad de varones >=6: ' + contm6);   
 }
